@@ -23,7 +23,7 @@ Build Status:
 
 [![Build Status](https://travis-ci.org/dj-wasabi/ansible-zabbix-agent.svg?branch=master)](https://travis-ci.org/dj-wasabi/ansible-zabbix-agent)
 
-This is an role for installing/updating the zabbix-agent.
+This is a role for installing/updating the zabbix-agent.
 
 This is fork of the 'dj-wasabi' zabbix-agent role. See an complete list of roles:
 
