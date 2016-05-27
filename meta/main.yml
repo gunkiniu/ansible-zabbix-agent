@@ -31,8 +31,6 @@ galaxy_info:
   - name: Solaris
     versions:
     - 10
-  categories:
-  - monitoring
   galaxy_tags:
   - zabbix
   - monitoring
