@@ -21,8 +21,6 @@ galaxy_info:
     - squeeze
     - wheezy
   - name: Suse
-    versions:
-    - 10
   - name: opensuse
     versions:
     - 12.1
