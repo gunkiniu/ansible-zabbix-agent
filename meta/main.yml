@@ -35,6 +35,5 @@ galaxy_info:
   - monitoring
   galaxy_tags:
   - zabbix
-  - zabbix-agent
   - monitoring
 dependencies: []
