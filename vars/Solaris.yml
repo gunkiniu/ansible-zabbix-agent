@@ -1,0 +1,6 @@
+---
+# vars file for zabbix-agent (Solaris)
+
+zabbix_agent: zabbix-agentd
+zabbix_agent_service: zabbix_agentd
+zabbix_agent_conf: zabbix_agentd.conf
