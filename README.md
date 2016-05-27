@@ -23,15 +23,12 @@ Build Status:
 
 [![Build Status](https://travis-ci.org/dj-wasabi/ansible-zabbix-agent.svg?branch=master)](https://travis-ci.org/dj-wasabi/ansible-zabbix-agent)
 
-This is an role for installing and maintaining the zabbix-agent.
+This is an role for installing/updating the zabbix-agent.
 
-This is one of the 'dj-wasabi' roles which configures your whole zabbix environment. See an list for the complete list:
+This is fork of the 'dj-wasabi' zabbix-agent role. See an complete list of roles:
 
- * zabbix-server (https://galaxy.ansible.com/dj-wasabi/zabbix-server/)
- * zabbix-proxy (https://galaxy.ansible.com/dj-wasabi/zabbix-proxy/)
- * zabbix-javagateway (https://galaxy.ansible.com/dj-wasabi/zabbix-javagateway/)
- * zabbix-agent (https://galaxy.ansible.com/dj-wasabi/zabbix-agent/)
-
+ * (https://galaxy.ansible.com/dj-wasabi/)
+ 
 #Requirements
 ##Operating systems
 This role will work on the following operating systems:
@@ -39,7 +36,8 @@ This role will work on the following operating systems:
  * Red Hat
  * Debian
  * Ubuntu
- * opensuse
+ * suse/opensuse
+ * Solaris 10
 
 So, you'll need one of those operating systems.. :-)
 Please sent Pull Requests or suggestions when you want to use this role for other Operating systems.
@@ -88,7 +86,7 @@ This ansible role uses the modules from "Cove" found in this pull request: https
 
 #Installation
 
-Installing this role is very simple: `ansible-galaxy install dj-wasabi.zabbix-agent`
+Installing this role is very simple: `ansible-galaxy install gunkiniu.zabbix-agent`
 
 #Role Variables
 
@@ -182,7 +180,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: all
       roles:
-         - role: dj-wasabi.zabbix-agent
+         - role: gunkiniu.zabbix-agent
            agent_server: 192.168.33.30
            agent_serveractive: 192.168.33.30
            zabbix_url: http://zabbix.example.com
@@ -202,7 +200,7 @@ Including an example of how to use your role (for instance, with variables passe
 ##Combination of group_vars and playbook 
 You can also use the group_vars or the host_vars files for setting the variables needed for this role. File you should change: `group_vars/all` or `host_vars/<zabbix_server>` (Where <zabbix_server> is the hostname of the machine running Zabbix Server)
 
-		agent_server: 192.168.33.30
+	agent_server: 192.168.33.30
         agent_serveractive: 192.168.33.30
         zabbix_url: http://zabbix.example.com
         zabbix_api_use: true
@@ -222,7 +220,7 @@ and in the playbook only specifying:
 
     - hosts: all
       roles:
-         - role: dj-wasabi.zabbix-agent
+         - role: gunkiniu.zabbix-agent
 
 #Test Kitchen
 
@@ -263,3 +261,6 @@ Please send suggestion or pull requests to make this role better. Also let me kn
 Github: https://github.com/dj-wasabi/ansible-zabbix-agent
 
 mail: ikben [ at ] werner-dijkerman . nl
+
+Or my fork at:
+Github: https://github.com/gunkiniu/ansible-zabbix-agent
