@@ -1,7 +1,7 @@
 ---
 galaxy_info:
-  author: Werner Dijkerman
-  description: Installing and maintaining zabbix-agent for RedHat/Debian/Ubuntu.
+  author: Werner Dijkerman / mod by Ivan Gunkin
+  description: Installing and maintaining zabbix-agent for RedHat/Debian/SuSe/Solaris.
   company: myCompany.Dotcom
   license: license (GPLv3)
   min_ansible_version: 1.9
@@ -20,6 +20,10 @@ galaxy_info:
     versions:
     - squeeze
     - wheezy
+  - name: SuSe
+    versions:
+    - 10
+    - 11
   - name: opensuse
     versions:
     - 12.1
@@ -27,6 +31,10 @@ galaxy_info:
     - 12.3
     - 13.1
     - 13.2
+  - name: Solaris
+    versions:
+    - 10
+    - 11
   categories:
   - monitoring
   galaxy_tags:
