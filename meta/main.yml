@@ -20,10 +20,9 @@ galaxy_info:
     versions:
     - squeeze
     - wheezy
-  - name: SuSe
+  - name: Suse
     versions:
     - 10
-    - 11
   - name: opensuse
     versions:
     - 12.1
@@ -34,7 +33,6 @@ galaxy_info:
   - name: Solaris
     versions:
     - 10
-    - 11
   categories:
   - monitoring
   galaxy_tags:
