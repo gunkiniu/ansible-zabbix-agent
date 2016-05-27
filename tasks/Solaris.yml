@@ -1,0 +1,22 @@
+# Tasks specific for Solaris/SunOS Systems
+
+- name: "Solaris | add http_proxy in profile"
+  lineinfile: dest=/etc/profile regexp='^HTTP_PROXY="' line='HTTP_PROXY={{ ansible_http_proxy }}'
+- name: "Solaris | add https_proxy in profile"
+  lineinfile: dest=/etc/profile regexp='^HTTPS_PROXY="' line='HTTPS_PROXY={{ ansible_https_proxy }}'
+
+- name: "Solaris | Install CSWpkgutil"
+  svr4pkg: name=CSWpkgutil src=http://get.opencsw.org/now state=present
+  ignore_errors: yes
+  become: yes
+  tags:
+    - zabbix-agent
+    - init
+
+
+- name: "Solaris | Install zabbix-agent"
+  pkgutil: name=zabbix_agent state=latest
+  become: yes
+  tags:
+    - zabbix-agent
+    - init
