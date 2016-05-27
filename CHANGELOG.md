@@ -1,8 +1,13 @@
-#wdijkerman-zabbix release
+#gunkiniu zabbix-agent changlog
 
-Below an overview of all changes in the releases.
+Below an overview of all changes
 
 Version (Release date)
+
+0.6.1   (2016-05-27)
+  * Add Suse, Solaris
+  * zabbix_agentd.conf name into vars
+  * add http(s)_proxy for installing pkgs
 
 0.6.0   (2016-05-12)
 
