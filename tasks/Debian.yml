@@ -50,8 +50,12 @@
   apt: pkg={{ zabbix_agent_package }}
        state={{ zabbix_agent_package_state }}
        update_cache=yes
+       dpkg_options=force-confnew
        cache_valid_time=0
-       # Note: set cache_valid_time=0 to ensure that an apt-get update after the added repo-key
+       # Note: 
+       # dpkg_options=force-confnew - help upgrade pkg from 2.* while config change and new pkg test run fails with it
+       #
+       # set cache_valid_time=0 to ensure that an apt-get update after the added repo-key
        # else you often get 'WARNING: The following packages cannot be authenticated!
        # See also: http://askubuntu.com/questions/75565/why-am-i-getting-authentication-errors-for-packages-from-an-ubuntu-repository
 
