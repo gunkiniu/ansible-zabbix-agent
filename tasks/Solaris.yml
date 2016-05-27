@@ -15,7 +15,7 @@
 
 
 - name: "Solaris | Install zabbix-agent"
-  pkgutil: name=zabbix_agent state=latest
+  pkgutil: name={{ zabbix_agent_package }} state={{ zabbix_agent_package_state }}
   become: yes
   tags:
     - zabbix-agent
